@@ -16,3 +16,9 @@ If development continues beyond 1.0, it woud be to include the following feature
   pod
 - Support for more media types
 - Support for more interactions with abc media types
+
+## TODO
+- Implement client contact acceptance testing for abcd - http://agouti.org/
+
+## DONE
+- Implement fs-agnostic testing: https://github.com/spf13/afero
