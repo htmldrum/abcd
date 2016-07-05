@@ -1,10 +1,13 @@
 package main_test
 
 import (
+	"os"
 	. "github.com/htmldrum/abcd/cmd/abcd"
-
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/htmldrum/abcd/fs"
+	"github.com/spf13/afero"
+	"path/filepath"
 )
 
 var _ = Describe("Abcd", func() {
@@ -49,23 +52,73 @@ var _ = Describe("Abcd", func() {
 			})
 		})
 	})
-	Describe("abcd", func() {
-	})
+	Describe("abcd", func() {})
 	Describe("read_config", func() {
-		It("Should have a ReadConfig function", func(){
-			ReadConfig()
-			Expect(true).To(Equal(true))
-		})
 		It("Should use a unixey path to store its config", func(){
 			stub_env := []string{"HOME=/west/wing", "MOUNT=/media"}
 			Expect("/west/wing/.abcd").To(Equal(GetConfDir(&stub_env)))
 		})
-		Describe("EnsureConfDir", func(){
-			Context("When confdir doesn't exist", func(){
+		Describe("EnsureConfFile", func(){
+			var mockFS afero.Fs
+			test_home :="/home/darmock"
+			test_path := filepath.Join(test_home, DIRNAME, CONFNAME)
+			test_dir := filepath.Join(test_home, DIRNAME)
+
+			Context("When conffile doesn't exist", func(){
+				BeforeEach(func(){
+					mockFS = fs.NewMockFs()
+					mockFS.Mkdir(test_dir, os.ModeDir)
+				})
+				It("It creates the required conf dir", func(){
+					fi, _ := mockFS.Stat(test_path)
+					Expect(fi).To(BeNil())
+					EnsureConfFile(&test_path, mockFS)
+					new_fi, _ := mockFS.Stat(test_path)
+					Expect(new_fi).NotTo(BeNil())
+				})
 			})
 			Context("When confdir exists", func(){
-				It("Should create the confidr", func(){
-					// Assertions
+				BeforeEach(func(){
+					mockFS = fs.NewMockFs()
+					mockFS.Mkdir(test_path, os.ModeDir)
+				})
+				It("", func(){
+					fi, _ := mockFS.Stat(test_path)
+					mod_time := fi.ModTime()
+					EnsureConfDir(&test_path, mockFS)
+					new_fi, _ := mockFS.Stat(test_path)
+					Expect(new_fi.ModTime().Equal(mod_time)).To(Equal(true))
+				})
+			})
+		})
+		Describe("EnsureConfDir", func(){
+
+			var mockFS afero.Fs
+			test_path := "/home/darmock/.and_jalad"
+
+			Context("When confdir doesn't exist", func(){
+				BeforeEach(func(){
+					mockFS = fs.NewMockFs()
+				})
+				It("It creates the required conf dir", func(){
+					fi, _ := mockFS.Stat(test_path)
+					Expect(fi).To(BeNil())
+					EnsureConfDir(&test_path, mockFS)
+					new_fi, _ := mockFS.Stat(test_path)
+					Expect(new_fi).NotTo(BeNil())
+				})
+			})
+			Context("When confdir exists", func(){
+				BeforeEach(func(){
+					mockFS = fs.NewMockFs()
+					mockFS.Mkdir(test_path, os.ModeDir)
+				})
+				It("Doesn't create the required conf dir", func(){
+					fi, _ := mockFS.Stat(test_path)
+					mod_time := fi.ModTime()
+					EnsureConfDir(&test_path, mockFS)
+					new_fi, _ := mockFS.Stat(test_path)
+					Expect(new_fi.ModTime().Equal(mod_time)).To(Equal(true))
 				})
 			})
 		})

@@ -18,7 +18,8 @@ If development continues beyond 1.0, it woud be to include the following feature
 - Support for more interactions with abc media types
 
 ## TODO
-- Implement client contact acceptance testing for abcd - http://agouti.org/
+- Implement bolt-db
 
 ## DONE
 - Implement fs-agnostic testing: https://github.com/spf13/afero
+- Implement client contact acceptance testing for abcd - http://agouti.org/

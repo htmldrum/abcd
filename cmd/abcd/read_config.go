@@ -1,6 +1,9 @@
 package main
 
 import (
+	"encoding/json"
+	//"fmt"
+	//"io/ioutil"
 	"os"
 	"strings"
 	"regexp"
@@ -9,10 +12,9 @@ import (
 	// log "github.com/Sirupsen/logrus"
 	// "github.com/olebedev/config"
 	// "strconv"
+	"github.com/htmldrum/abcd/fs"
 	"github.com/spf13/afero"
 )
-
-var FSp afero.Fs = afero.NewOsFs()
 
 const DIRNAME = ".abcd"
 const CONFNAME = ".abcd.json"
@@ -22,14 +24,10 @@ const HOME_FLAG = `HOME=`
 func ReadConfig () {
 	env := os.Environ()
 	conf_dir := GetConfDir(&env)
-	EnsureConfDir(&conf_dir)
-	// fi, err := os.Lstat(conf_loc)
+	EnsureConfDir(&conf_dir, fs.AppFs)
+	EnsureConfFile(&conf_dir, fs.AppFs)
 
-	// 1) Check the conf dir exists OR create
-	// 2) Check the conf *file* exists OR create
 	// 3) Check the bolt db exists OR create
-	// EnsureConfDir()
-	// EnsureConfFile()
 	// EnsureConfDB()
 
 	// try_it = true
@@ -72,5 +70,46 @@ func MakeHome(home_path *string){
 	os.Mkdir(*home_path, os.ModeDir)
 }
 
-func EnsureConfDir(p *string){
+// Just test stat'ing for now
+func EnsureConfDir(p *string, fs afero.Fs){
+	_, err := fs.Stat(*p)
+
+	if err != nil {
+		if os.IsNotExist(err) {
+			err = fs.Mkdir(*p, os.ModeDir)
+			if err != nil {
+				panic(err)
+			}
+		}
+	}
+}
+
+func EnsureConfFile(p *string, fss afero.Fs){
+	_, err := fss.Stat(*p)
+
+	if err != nil {
+		if os.IsNotExist(err) {
+			WriteDefaultConf(p, fss)
+		} else {
+			panic(err)
+		}
+	}
+	EnsureConfFileValid(p, fss)
+}
+
+func WriteDefaultConf(p *string, fss afero.Fs){
+	defaultConfig := []byte(`{"feeds":[],"faves":[]}`)
+	eFC := afero.WriteFile(fss, *p, defaultConfig, 0644)
+	fs.Assert(eFC)
+}
+func EnsureConfFileValid(p *string, ffs afero.Fs){
+	var m interface{}
+	conf, eRF := afero.ReadFile(ffs, *p)
+	fs.Assert(eRF)
+
+	eSer := json.Unmarshal(conf, &m)
+
+	if fs.IsNil(eSer) {
+		WriteDefaultConf(p, ffs)
+	}
 }
