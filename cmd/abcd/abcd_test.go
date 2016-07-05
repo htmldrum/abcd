@@ -72,7 +72,7 @@ var _ = Describe("Abcd", func() {
 				It("It creates the required conf dir", func(){
 					fi, _ := mockFS.Stat(test_path)
 					Expect(fi).To(BeNil())
-					EnsureConfFile(&test_path, mockFS)
+					EnsureConfFile(test_path, mockFS)
 					new_fi, _ := mockFS.Stat(test_path)
 					Expect(new_fi).NotTo(BeNil())
 				})
@@ -85,7 +85,7 @@ var _ = Describe("Abcd", func() {
 				It("", func(){
 					fi, _ := mockFS.Stat(test_path)
 					mod_time := fi.ModTime()
-					EnsureConfDir(&test_path, mockFS)
+					EnsureConfDir(test_path, mockFS)
 					new_fi, _ := mockFS.Stat(test_path)
 					Expect(new_fi.ModTime().Equal(mod_time)).To(Equal(true))
 				})
@@ -103,7 +103,7 @@ var _ = Describe("Abcd", func() {
 				It("It creates the required conf dir", func(){
 					fi, _ := mockFS.Stat(test_path)
 					Expect(fi).To(BeNil())
-					EnsureConfDir(&test_path, mockFS)
+					EnsureConfDir(test_path, mockFS)
 					new_fi, _ := mockFS.Stat(test_path)
 					Expect(new_fi).NotTo(BeNil())
 				})
@@ -116,7 +116,7 @@ var _ = Describe("Abcd", func() {
 				It("Doesn't create the required conf dir", func(){
 					fi, _ := mockFS.Stat(test_path)
 					mod_time := fi.ModTime()
-					EnsureConfDir(&test_path, mockFS)
+					EnsureConfDir(test_path, mockFS)
 					new_fi, _ := mockFS.Stat(test_path)
 					Expect(new_fi.ModTime().Equal(mod_time)).To(Equal(true))
 				})
