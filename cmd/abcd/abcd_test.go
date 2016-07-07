@@ -8,6 +8,7 @@ import (
 	"github.com/htmldrum/abcd/fs"
 	"github.com/spf13/afero"
 	"path/filepath"
+	"gopkg.in/h2non/gock.v1"
 )
 
 var _ = Describe("Abcd", func() {
@@ -45,7 +46,7 @@ var _ = Describe("Abcd", func() {
 				for i, _ := range names {
 					articles = append(articles, Article{names[i], urls[i]})
 				}
-				feed = Feed{f_name, f_description, f_URI, f_subjects, f_networks, f_last_contact_datetime, articles}
+				feed = Feed{1, f_name, f_description, f_URI, f_subjects, f_networks, f_last_contact_datetime, articles}
 			})
 			It("Builds a Feed", func(){
 				Expect(feed.Name).Should(Not(BeZero()))
@@ -53,6 +54,21 @@ var _ = Describe("Abcd", func() {
 		})
 	})
 	Describe("abcd", func() {})
+	Describe("SaveFeeds", func(){
+	})
+	Describe("RefreshFeeds", func(){
+		It("Veifies feeds from template", func(){
+			defer gock.Off()
+
+			gock.New("http://www.abc.net.au").
+				Get("/services/rss/programs.htm").
+				Reply(200).
+				File("programs.htm")
+
+			feeds := RefreshFeeds()
+			Expect(len(feeds)).To(BeNumerically("==", 201))
+		})
+	})
 	Describe("read_config", func() {
 		It("Should use a unixey path to store its config", func(){
 			stub_env := []string{"HOME=/west/wing", "MOUNT=/media"}
@@ -92,7 +108,6 @@ var _ = Describe("Abcd", func() {
 			})
 		})
 		Describe("EnsureConfDir", func(){
-
 			var mockFS afero.Fs
 			test_path := "/home/darmock/.and_jalad"
 

@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	//"fmt"
 	//"io/ioutil"
 	"os"
 	"strings"
@@ -18,19 +17,16 @@ import (
 
 const DIRNAME = ".abcd"
 const CONFNAME = ".abcd.json"
-const DBNAME = ".abcd.bolt"
+// const DBNAME = ".abcd.db"
 
 const HOME_FLAG = `HOME=`
-func ReadConfig () {
+func ReadConfig ()(Config){
 	env := os.Environ()
 	conf_dir := GetConfDir(&env)
-	conf_file := GetConfFile(conf_dir)
+	conf_file := filepath.Join(conf_dir, CONFNAME)
+	// db_file := filepath.Join(conf_dir, DBNAME)
 	EnsureConfDir(conf_dir, fs.AppFs)
-	EnsureConfFile(conf_file, fs.AppFs)
-
-	// 3) Check the bolt db exists OR create
-	// EnsureConfDB()
-	// 4) Return configuration object - or pointer? erghhh
+	return EnsureConfFile(conf_file, fs.AppFs)
 }
 
 func GetConfDir(envs *[]string)(p string){
@@ -56,17 +52,13 @@ func GetConfFile(p string) string {
 	return filepath.Join(p, CONFNAME)
 }
 
-func MakeHome(home_path string){
-	os.Mkdir(home_path, os.ModeDir)
-}
-
 // Just test stat'ing for now
-func EnsureConfDir(p string, fs afero.Fs){
-	_, err := fs.Stat(p)
+func EnsureConfDir(p string, fss afero.Fs){
+	_, err := fss.Stat(p)
 
 	if err != nil {
 		if os.IsNotExist(err) {
-			err = fs.Mkdir(p, os.ModeDir)
+			err = fss.MkdirAll(p, 0700)
 			if err != nil {
 				panic(err)
 			}
@@ -74,7 +66,7 @@ func EnsureConfDir(p string, fs afero.Fs){
 	}
 }
 
-func EnsureConfFile(p string, fss afero.Fs){
+func EnsureConfFile(p string, fss afero.Fs)(Config){
 	_, err := fss.Stat(p)
 
 	if err != nil {
@@ -84,22 +76,24 @@ func EnsureConfFile(p string, fss afero.Fs){
 			panic(err)
 		}
 	}
-	EnsureConfFileValid(p, fss)
+	return EnsureConfFileValid(p, fss)
 }
 
-func WriteDefaultConf(p string, fss afero.Fs){
+func WriteDefaultConf(p string, fss afero.Fs)(c Config){
 	defaultConfig := []byte(`{"feeds":[],"faves":[]}`)
-	eFC := afero.WriteFile(fss, p, defaultConfig, 0644)
+	eFC := afero.WriteFile(fss, p, defaultConfig, 0777)
 	fs.Assert(eFC)
+	json.Unmarshal(defaultConfig, &c)
+	return c
 }
-func EnsureConfFileValid(p string, ffs afero.Fs){
-	var m interface{}
+func EnsureConfFileValid(p string, ffs afero.Fs)(c Config){
 	conf, eRF := afero.ReadFile(ffs, p)
 	fs.Assert(eRF)
 
-	eSer := json.Unmarshal(conf, &m)
+	eSer := json.Unmarshal(conf, &c)
 
 	if fs.IsNil(eSer) {
-		WriteDefaultConf(p, ffs)
+		c = WriteDefaultConf(p, ffs)
 	}
+	return c
 }

@@ -1,6 +1,7 @@
 package main
 
 type Feed struct {
+	Id uint
 	Name string
 	Description string
 	URI string
@@ -15,5 +16,6 @@ type Article struct {
 }
 
 type Config struct {
-	favourite_names []string
+	faves []string
+	feeds []string
 }
