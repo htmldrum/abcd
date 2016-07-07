@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"io"
 	"os"
 	"os/exec"
 	"log"
@@ -23,8 +22,8 @@ func main() {
 	buildAll := false
 
 	targs := []string{
-		"abcd/cmd/abcd"
-		"abcd/cmd/abcv"
+		"abcd/cmd/abcd",
+		"abcd/cmd/abcv",
 	}
 
 	switch *targets {
@@ -37,11 +36,9 @@ func main() {
 	}
 
 	// Juggle argv
-	ldFlags := ""
-	baseArgs = append(baseArgs, "--ldflags="+ldFlags)
 	args := append(baseArgs, targs...)
 
-y	cmd := exec.Command("go", args...)
+	cmd := exec.Command("go", args...)
 	cmd.Env = append(cleanGoEnv(),
 		"GOPATH="+buildGoPath,
 	)

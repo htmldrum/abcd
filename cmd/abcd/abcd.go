@@ -1,10 +1,10 @@
 package main
 
+var c Config
+
 func main(){
-	ReadConfig()
-	RefreshFeeds()
+	c = ReadConfig()
+	feeds := RefreshFeeds()
+	SaveFeeds(*feeds)
 	StartServer()
 }
-
-func RefreshFeeds(){}
-func StartServer(){}

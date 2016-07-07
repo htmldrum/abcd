@@ -1,9 +1,7 @@
-all:
-	go run make.go -v
 abcd:
-	go run make.go -v -targets abcd
+	go build github.com/htmldrum/abcd/cmd/abcd
 abcv:
-	go run make.go -v -targets abcv
+	go build github.com/htmldrum/abcd/cmd/abcv
 test_abcd:
 	go test github.com/htmldrum/abcd/cmd/abcd
 test_abcv:
@@ -11,5 +9,3 @@ test_abcv:
 test:
 	test_abcd
 	test_abcv
-
-
