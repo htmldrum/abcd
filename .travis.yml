@@ -1,0 +1,11 @@
+language: go
+go:
+  - 1.8.3
+  - tip
+before_script:
+  - go get github.com/htmldrum/abcd
+  - go get github.com/tools/godep
+install:
+  - godep restore
+script:
+  - make test

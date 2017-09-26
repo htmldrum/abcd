@@ -1,0 +1,26 @@
+{
+	"ImportPath": "github.com/htmldrum/abcd",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v75",
+	"Packages": [
+		"github.com/spf13/afero"
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/spf13/afero",
+			"Rev": "ee1bd8ee15a1306d1f9201acc41ef39cd9f99a1b"
+		},
+		{
+			"ImportPath": "github.com/spf13/afero/mem",
+			"Rev": "ee1bd8ee15a1306d1f9201acc41ef39cd9f99a1b"
+		},
+		{
+			"ImportPath": "golang.org/x/text/transform",
+			"Rev": "19e51611da83d6be54ddafce4a4af510cb3e9ea4"
+		},
+		{
+			"ImportPath": "golang.org/x/text/unicode/norm",
+			"Rev": "19e51611da83d6be54ddafce4a4af510cb3e9ea4"
+		}
+	]
+}
