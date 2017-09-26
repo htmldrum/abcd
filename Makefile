@@ -8,7 +8,7 @@ test_abcv:
 	go test -race -v github.com/htmldrum/abcd/cmd/abcv
 test:
 	go vet
-	@MAKE test_abcd
-	@MAKE test_abcv
+	@make test_abcd
+	@make test_abcv
 doc:
 	godoc
