@@ -17,7 +17,7 @@ If development continues beyond 1.0, it woud be to include the following feature
 ## TODO
 - Implement bolt-db
 - @TODO GORO: Opporunity for gratutitous use of (Go Ro)utines
-
+- https://github.com/nsf/termbox-go
 ## DONE
 - Implement fs-agnostic testing: https://github.com/spf13/afero
 - Implement client contact acceptance testing for abcd - http://agouti.org/
