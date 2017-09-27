@@ -55,13 +55,6 @@ func ListPodcasts(client http.Client) ([]Podcast, error) {
 		return podcasts, scrapeError
 	}
 
-	// i := 0
-	// start_ndx := 4
-	// show_ndx := -1 // Need to pre-increment 0-indexed array
-	// var (
-	// 	current_show string
-	// )
-
 	for nxt := p_cont.FirstChild; nxt != nil; nxt = nxt.NextSibling {
 		if i > start_ndx { // Podcasts dont start until 5th node
 			if node_is_h2(nxt) {

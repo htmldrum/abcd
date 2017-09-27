@@ -1,5 +1,7 @@
-abcd [![Build Status](https://travis-ci.org/htmldrum/abcd.svg?branch=master)](https://travis-ci.org/htmldrum/abcd)
+abcd
 ======
+[![Build Status](https://travis-ci.org/htmldrum/abcd.svg?branch=master)](https://travis-ci.org/htmldrum/abcd)
+
 ABC News Australia command line client and web server
 
 ## Design

@@ -1,0 +1,335 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: http://www.abc.net.au/news/topics/subject/j
+    method: GET
+  response:
+    body: "<!DOCTYPE html>\n  <!--[if lt IE 7]>      <html lang=\"en-AU\" class=\"lt-ie9
+      lt-ie8 lt-ie7\"> <![endif]-->\n  <!--[if IE 7]>         <html lang=\"en-AU\"
+      class=\"lt-ie9 lt-ie8\"> <![endif]-->\n  <!--[if IE 8]>         <html lang=\"en-AU\"
+      class=\"lt-ie9\"> <![endif]-->\n  <!--[if gt IE 8]><!--> <html lang=\"en-AU\">
+      <!--<![endif]-->\n<head>\n  <title>Subjects - ABC News (Australian Broadcasting
+      Corporation)</title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/>\n<link
+      rel=\"schema.DC\" href=\"http://purl.org/dc/elements/1.1/\"/>\n<link rel=\"schema.DCTERMS\"
+      href=\"http://purl.org/dc/terms/\"/>\n<link rel=\"schema.iptc\" href=\"urn:newsml:iptc.org:20031010:topicset.iptc-genre:8\"/>\n<link
+      rel=\"canonical\" data-abc-platform=\"standard\" href=\"http://www.abc.net.au/news/topics/subject/\"/>\n<meta
+      name=\"title\" content=\"Subjects\"/>\n                <meta name=\"description\"
+      content=\"Australia&#039;s most trusted source of local, national and world
+      news. Comprehensive, independent, in-depth analysis, the latest business, sport,
+      weather and more.\"/>\n                <meta name=\"ContentId\" content=\"46716\"/>\n
+      \               <meta name=\"ABC.site\" content=\"ABC News\"/>\n                <meta
+      name=\"ABC_WCMS_sitesearch_include\" content=\"false\"/>\n                <meta
+      name=\"twitter:card\" content=\"summary\"/>\n                <meta name=\"ABC.ContentType\"
+      content=\"CMChannel\"/>\n                <meta name=\"DC.Publisher.CorporateName\"
+      content=\"Australian Broadcasting Corporation\"/>\n                <meta name=\"DC.rights\"
+      scheme=\"DCTERMS.URI\" content=\"http://www.abc.net.au/conditions.htm#UseOfContent\"/>\n
+      \       <meta name=\"DC.type\" content=\"Collection\"/>\n                <meta
+      name=\"DC.creator.CorporateName\" content=\"Australian Broadcasting Corporation\"/>\n
+      \               <meta name=\"DC.format\" scheme=\"DCTERMS.IMT\" content=\"text/html\"/>\n
+      \       <meta name=\"DC.identifier\" scheme=\"DCTERMS.URI\" content=\"http://www.abc.net.au/news/topics/subject/\"/>\n
+      \         <meta property=\"og:site_name\" content=\"ABC News\"/>\n                <meta
+      name=\"twitter:site\" content=\"@ABCNews\"/>\n                <meta name=\"apple-mobile-web-app-title\"
+      content=\"ABC News\"/>\n                <meta property=\"fb:pages\" content=\"72924719987\"/>\n
+      \               <meta property=\"og:image:height\" content=\"700\"/>\n                <meta
+      property=\"og:image:width\" content=\"700\"/>\n                <meta property=\"og:image:type\"
+      content=\"image/jpeg\"/>\n                <meta property=\"og:image\" content=\"http://www.abc.net.au/news/linkableblob/8413676/data/abc-news-og-data.jpg\"/>\n
+      \               <link media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\"\n
+      \                                                                             href=\"http://www.abc.net.au/res/bundles/2.0.5/styles/abc.bundle.2.0.5.min.css\"/>\n
+      \   <link rel=\"stylesheet\" type=\"text/css\"\n                                                                              href=\"http://www.abc.net.au/res/sites/news/styles/min/abc.news.css?2017-09-15b\"/>\n
+      \   <!--[if lte IE 7]>\n            <link rel=\"stylesheet\" type=\"text/css\"
+      href=\"http://www.abc.net.au/res/sites/news/styles/yaml/core/slim_iehacks.css\"
+      media=\"screen, projection\"/>\n           <![endif]-->\n         <link rel=\"stylesheet\"
+      type=\"text/css\"\n                                                                              href=\"/cm/code/8886686/livefyre-fixes-v2.css\"/>\n
+      \   <link rel=\"alternate\" type=\"application/rss+xml\" title=\"Just In\" href=\"/news/feed/51120/rss.xml\">\n
+      \ <link rel=\"apple-touch-icon-precomposed\" sizes=\"76x76\" href=\"http://www.abc.net.au/cm/cb/8413652/News+iOS+76x76+2017/data.png\"/>\n
+      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"120x120\" href=\"http://www.abc.net.au/cm/cb/4355924/News+iOS+120x120/data.png\"/>\n
+      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"152x152\" href=\"http://www.abc.net.au/cm/cb/8413660/News+iOS+152x152+2017/data.png\"/>\n
+      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"180x180\" href=\"http://www.abc.net.au/cm/cb/8413674/News+iOS+180x180+2017/data.png\"/>\n
+      \   <script type=\"text/javascript\" src=\"/news/ajax/46716/managed.js\"></script>\n<!--[if
+      lte IE 9]><script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/es5shim/4.1.0/es5-shim.min.js\"></script><![endif]-->\n
+      \       <!--[if lt IE 9]><script type=\"text/javascript\" src=\"http://www.abc.net.au/res/bundles/2.0.5/scripts/html5shiv.js\"></script><![endif]-->\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/jquery/jquery-1.11.3.min.js\"></script>\n
+      \       <!--[if lte IE 9]><script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/iecors/jquery.iecors.min.js\"></script><![endif]-->\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/location/abc.location-1.latest.min.js\"></script>\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/bundles/platforms/abc.bundle.platforms-1.0.min.js\"></script>\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/jquery/plugins/jquery.viewport.mini.js\"></script>\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/sites/news/scripts/min/abc.news.js?2017-09-27\"></script>\n
+      \       <script type=\"text/javascript\" src=\"/cm/code/8724582/abc.news.config-v5.js\"
+      async></script>\n        </head>\n<body class=\"platform-standard news\">\n<!--noindex-->\n<!--
+      Start ABC Bundle Header 2.0.5 -->\n<nav id=\"abcHeader\" class=\"global\" role=\"navigation\"
+      aria-label=\"ABC Network Navigation\" data-resourcebase=\"http://www.abc.net.au/res/bundles/2.0.5/\"
+      data-scriptsbase=\"http://www.abc.net.au/res/bundles/2.0.5/scripts/\" data-version=\"2.0.5\">\n
+      <a class=\"abcLink home\" href=\"http://www.abc.net.au/\" data-mobile=\"http://mobile.abc.net.au/\"><img
+      src=\"http://www.abc.net.au/res/bundles/2.0.5/images/logo-abc@2x.png\" width=\"72\"
+      height=\"18\" alt=\"\" />ABC Home</a>\n <div class=\"sites\">\n  <a class=\"controller\"
+      href=\"javascript:;\" aria-controls=\"abcNavSites\"><img src=\"http://www.abc.net.au/res/bundles/2.0.5/images/icon-menu-grey@1x.gif\"
+      \n   data-src=\"images/icon-menu-grey@1x.gif\" data-hover=\"images/icon-menu-blue@1x.gif\"
+      class=\"icon\" alt=\"\" /><span class='text'><span>Open</span> Sites <span>menu</span></span></a>\n
+      \ <div id=\"abcNavSites\" class=\"menu\" role=\"menu\" aria-expanded=\"false\">\n
+      \  <ul>\n    <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"http://www.abc.net.au/\"
+      data-mobile=\"http://mobile.abc.net.au/\">ABC Home</a></li>\n    <li><a class=\"abcLink\"
+      role=\"menuitem\" href=\"http://www.abc.net.au/news/\" data-mobile=\"http://mobile.abc.net.au/news/\">News</a></li>\n
+      \   <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"http://www.abc.net.au/iview/\"
+      data-mobile=\"http://www.abc.net.au/iview/\">iview</a></li>\n    <li><a class=\"abcLink\"
+      role=\"menuitem\" href=\"http://www.abc.net.au/tv/\" data-mobile=\"\">TV</a></li>\n
+      \   <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"http://www.abc.net.au/radio/\"
+      data-mobile=\"http://www.abc.net.au/radio/\">Radio</a></li>\n    <li><a class=\"abcLink\"
+      role=\"menuitem\" href=\"http://www.abc.net.au/children/\" data-mobile=\"http://mobile.abc.net.au/children/\">Kids</a></li>\n
+      \   <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"https://shop.abc.net.au/\"
+      data-mobile=\"https://shop.abc.net.au/\">Shop</a></li>\n    <li><a class=\"abcLink
+      more\" role=\"menuitem\" href=\"http://www.abc.net.au/more/\" data-mobile=\"http://www.abc.net.au/more/\">More</a></li>\n
+      \  </ul>\n  </div>\n </div>\n <div class=\"accounts\">\n  <!-- Accounts is currently
+      injected due to different URLs --><span data-src=\"images/icon-user-grey@1x.png\"
+      data-hover=\"images/icon-user-blue@1x.png\"></span>\n </div>\n <a class=\"abcLink
+      search\" href=\"http://search.abc.net.au/s/search.html?collection=abcall_meta&form=simple\"\n
+      \ data-mobile=\"http://mobile.search.abc.net.au/s/search.html?collection=abcall_meta&form=simple\"><span>Search</span>\n
+      \ <img src=\"http://www.abc.net.au/res/bundles/2.0.5/images/icon-search-grey@1x.png\"
+      data-hover=\"images/icon-search-blue@1x.png\" class=\"icon\" alt=\"\" /></a>\n</nav>\n<!--
+      End ABC Bundle Header 2.0.5 -->\n<!--endnoindex-->\n<!--noindex-->\n<div class=\"page_margins\">\n
+      \ <div id=\"header\" class=\"header\">\r\n    <div class=\"brand\">\r\n        <a
+      href=\"/news/\"><img class=\"print\" src=\"/cm/lb/8212706/data/news-logo-2017---desktop-print-data.png\"
+      alt=\"ABC News\" width=\"387\" height=\"100\" />\r\n                <img class=\"noprint\"
+      src=\"/cm/lb/8212704/data/news-logo2017-data.png\" alt=\"ABC News\" width=\"242\"
+      height=\"80\" />\r\n                </a></div>\r\n      <a href=\"/news/australia/\"
+      class=\"location-widget\">Australia</a><a href=\"/news/weather/\" class=\"weather-widget\">Weather</a></div>\r\n
+      \ <div id=\"nav\" class=\"nav\">           \n  <ul id=\"primary-nav\">\n        <li
+      id=\"n-news\" class=\"\"><a href=\"/news/\">News Home</a></li><li id=\"n-justin\"
+      class=\"\"><a href=\"/news/justin/\">Just In</a></li><li id=\"n-australia\"
+      class=\"\"><a href=\"/news/australia/\">Australia</a></li><li id=\"n-world\"
+      class=\"\"><a href=\"/news/world/\">World</a></li><li id=\"n-business\" class=\"\"><a
+      href=\"/news/business/\">Business</a></li><li id=\"n-sport\" class=\"\"><a href=\"/news/sport/\">Sport</a></li><li
+      id=\"n-science\" class=\"\"><a href=\"/news/science/\">Science</a></li><li id=\"n-arts-culture\"
+      class=\"\"><a href=\"/news/arts-culture/\">Arts</a></li><li id=\"n-analysis-and-opinion\"
+      class=\"\"><a href=\"/news/analysis-and-opinion/\">Analysis</a></li><li id=\"n-factcheck\"
+      class=\"\"><a href=\"/news/factcheck/\">Fact Check</a></li><li id=\"n-programs\"
+      class=\"\"><a href=\"/news/programs/\">Programs</a></li><li id=\"n-more\" class=\"\"><a
+      href=\"/news/more/\">More</a></li></ul>\n  </div>\n<div class=\"header subheader\">\r\n
+      \ <!--endnoindex--><h1>Topics Library</h1>\r\n    <!--noindex-->\r\n    <ul
+      class=\"nav\">\r\n        <li class=\"active\">\r\n            <a href=\"/news/topics/subject/\"><span>Subjects</span></a></li>\r\n
+      \       <li>\r\n            <a href=\"/news/topics/location/\"><span>Locations</span></a></li>\r\n
+      \       </ul>\r\n    </div><!-- A modules - start -->\n  <!-- A modules - end
+      -->\n  <div class=\"page section\">\n    <div class=\"subcolumns\">\n    <div
+      class=\"c75l\">\n      <!-- B modules - start -->\n      <div class=\"article
+      section placed\">\n    <!--endnoindex-->\n    <h1>Subjects</h1>\n\n\n\n\n\n<!--noindex-->\n
+      \ </div>\n<div class=\"section a-z\">\n    <ul>\n      <li>\n          <a href=\"/news/topics/subject/0-9\">#</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/a\">a</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/b\">b</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/c\">c</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/d\">d</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/e\">e</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/f\">f</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/g\">g</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/h\">h</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/i\">i</a>\n
+      \       </li>\n      <li class=\"active\" >\n          <a href=\"/news/topics/subject/j\">j</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/k\">k</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/l\">l</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/m\">m</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/n\">n</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/o\">o</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/p\">p</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/q\">q</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/r\">r</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/s\">s</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/t\">t</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/u\">u</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/v\">v</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/w\">w</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/x\">x</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/y\">y</a>\n
+      \       </li>\n      <li>\n          <a href=\"/news/topics/subject/z\">z</a>\n
+      \       </li>\n      </ul>\n  </div>\n<div class=\"section\">\n    <h2>\n      J</h2>\n
+      \   <ul>\n        <li>\n            <a href=\"/news/topic/japan\">japan</a></li>\n
+      \       <li>\n            <a href=\"/news/topic/jazz\">jazz</a></li>\n        <li>\n
+      \           <a href=\"/news/topic/jehovah-s-witness\">jehovah-s-witness</a></li>\n
+      \       <li>\n            <a href=\"/news/topic/journalism\">journalism</a></li>\n
+      \       <li>\n            <a href=\"/news/topic/joyce-barnaby\">joyce-barnaby</a></li>\n
+      \       <li>\n            <a href=\"/news/topic/judaism\">judaism</a></li>\n
+      \       <li>\n            <a href=\"/news/topic/judges-and-legal-profession\">judges-and-legal-profession</a></li>\n
+      \       <li>\n            <a href=\"/news/topic/judo\">judo</a></li>\n        </ul>\n
+      \   </div>\n<div class=\"section a-z\">\n    <ul>\n      <li>\n          <a
+      href=\"/news/topics/subject/0-9\">#</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/a\">a</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/b\">b</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/c\">c</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/d\">d</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/e\">e</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/f\">f</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/g\">g</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/h\">h</a>\n        </li>\n      <li>\n          <a
+      href=\"/news/topics/subject/i\">i</a>\n        </li>\n      <li class=\"active\"
+      >\n          <a href=\"/news/topics/subject/j\">j</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/k\">k</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/l\">l</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/m\">m</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/n\">n</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/o\">o</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/p\">p</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/q\">q</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/r\">r</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/s\">s</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/t\">t</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/u\">u</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/v\">v</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/w\">w</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/x\">x</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/y\">y</a>\n        </li>\n      <li>\n
+      \         <a href=\"/news/topics/subject/z\">z</a>\n        </li>\n      </ul>\n
+      \ </div>\n<!-- B modules - end -->\n    </div>\n    <div class=\"c25r sidebar\">\n
+      \   <!-- Sidebar modules - start -->\n    <!-- Sidebar modules - end -->\n  </div>\n</div>\n</div><!--
+      C modules - start -->\n  <!-- C modules - end -->\n<div id=\"footer\" class=\"page
+      section\">\r\n    <!-- program footer-->\n  <div class=\"subcolumns\">\n    <div
+      id=\"sitemap\" class=\"c75l\">\n        <div class=\"section\">\n          <h2>Site
+      Map</h2>\n        </div>\n        <div class=\"subcolumns\">\n          <div
+      class=\"c16l\">\n              <div class=\"section\">\n    <h3>Sections</h3><ul
+      class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>ABC News</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/justin/\"\n
+      \   >\n  \n\n  \n    \n        <span>Just In</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/australia/\"\n
+      \   >\n  \n\n  \n    \n        <span>Australia</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/world/\"\n
+      \   >\n  \n\n  \n    \n        <span>World</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/business/\"\n
+      \   >\n  \n\n  \n    \n        <span>Business</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/entertainment/\"\n
+      \   >\n  \n\n  \n    \n        <span>Entertainment</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/sport/\"\n
+      \   >\n  \n\n  \n    \n        <span>Sport</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/analysis-and-opinion/\"\n
+      \   >\n  \n\n  \n    \n        <span>Analysis &amp; Opinion</span>\n    \n    \n
+      \ \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a
+      href=\"/news/weather/\"\n    >\n  \n\n  \n    \n        <span>Weather</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/topics/\"\n    >\n  \n\n  \n    \n        <span>Topics</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/archive/\"\n    >\n  \n\n  \n    \n        <span>Archive</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/corrections/\"\n    >\n  \n\n  \n    \n        <span>Corrections
+      &amp; Clarifications</span>\n    \n    \n  \n\n  </a>\n</li>\n          </ul>\n
+      \   </div>\n</div>\n            <div class=\"c16l\">\n              <div class=\"section\">\n
+      \   <h3>Local Weather</h3><ul class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"http://www.abc.net.au/sydney/weather/\"\n    >\n  \n\n
+      \ \n    \n        <span>Sydney Weather</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/melbourne/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Melbourne Weather</span>\n    \n    \n
+      \ \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a
+      href=\"http://www.abc.net.au/adelaide/weather/\"\n    >\n  \n\n  \n    \n        <span>Adelaide
+      Weather</span>\n    \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"http://www.abc.net.au/brisbane/weather/\"\n    >\n  \n\n
+      \ \n    \n        <span>Brisbane Weather</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/perth/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Perth Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/hobart/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Hobart Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/darwin/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Darwin Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/canberra/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Canberra Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          </ul>\n    </div>\n</div>\n            <div class=\"c16l\">\n
+      \             <div class=\"section\">\n    <h3>Local News</h3><ul class=\"nav\">\n
+      \       <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/sydney/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Sydney News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/melbourne/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Melbourne News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/adelaide/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Adelaide News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/brisbane/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Brisbane News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/perth/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Perth News</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/hobart/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Hobart News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/darwin/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Darwin News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/canberra/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Canberra News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          </ul>\n    </div>\n</div>\n            <div class=\"c16l\">\n
+      \             <div class=\"section\">\n    <h3>Media</h3><ul class=\"nav\">\n
+      \       <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/video/\"\n
+      \   >\n  \n\n  \n    \n        <span>Video</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/audio/\"\n
+      \   >\n  \n\n  \n    \n        <span>Audio</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/photos/\"\n
+      \   >\n  \n\n  \n    \n        <span>Photos</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         </ul>\n    </div>\n</div>\n            <div class=\"c16l\">\n              <div
+      class=\"section\">\n    <h3>Subscribe</h3><ul class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"/news/feeds/\"\n    >\n  \n\n  \n    \n        <span>Podcasts</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/feeds/rss/\"\n    >\n  \n\n  \n    \n        <span>RSS
+      Feeds</span>\n    \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"/news/alerts/\"\n    >\n  \n\n  \n    \n        <span>NewsMail</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          </ul>\n    </div>\n</div>\n            <div
+      class=\"c16l\">\n              <div class=\"section\">\n    <h3>Connect</h3><ul
+      class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/upload/\"\n
+      \   >\n  \n\n  \n    \n        <span>Upload</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/contact/\"\n
+      \   >\n  \n\n  \n    \n        <span>Contact Us</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/analysis-and-opinion/\"\n
+      \   >\n  \n\n  \n    \n        <span>Suggest a Contributor</span>\n    \n    \n
+      \ \n\n  </a>\n</li>\n          </ul>\n    </div>\n</div>\n            </div>\n
+      \     </div>\n    <!-- right section-->\n    <div class=\"c25r\">\n      <div
+      id=\"fineprint\" class=\"section\">\n        <p>\n          <small>This service
+      may include material from Agence France-Presse (AFP), APTN, Reuters, AAP, CNN
+      and the BBC World Service which is copyright and cannot be reproduced.</small>\n
+      \       </p>\n        <p>\n          <small>AEST = Australian Eastern Standard
+      Time which is 10 hours ahead of UTC (Greenwich Mean Time)</small>\n        </p>\n
+      \     </div>\n    </div>\n  </div>\n  <div class=\"platforms\">\n      <span
+      class=\"platform-mobile disabled\">\n            Mobile view of this page is
+      unavailable</span>\n        </div>\n  </div><!-- End footer --></div>\n<!--
+      Start Webtrends -->\n<div class=\"hide\">\n  </div>\n<!-- End Webtrends -->\n<!--endnoindex--><!--Global
+      footer-->\n<!--noindex-->\n<!-- Start ABC Bundle Footer 2.0.5 (customised) -->\n<nav
+      id=\"abcFooter\" class=\"global\" role=\"navigation\" aria-label=\"ABC Footer
+      Navigation\" data-version=\"2.0.5\">\n <ul>\n  <li><a class=\"abcLink\" href=\"http://www.abc.net.au/conditions.htm\"
+      data-mobile=\"http://www.abc.net.au/conditions.htm\">Terms of Use</a></li>\n
+      \ <li><a class=\"abcLink\" href=\"http://about.abc.net.au/abc-privacy-policy/\"
+      data-mobile=\"http://about.abc.net.au/abc-privacy-policy/\">Privacy Policy</a></li>\n
+      \ <li><a class=\"abcLink\" href=\"http://www.abc.net.au/contact/\" data-mobile=\"http://www.abc.net.au/contact/\">Contact
+      Us</a></li>\n  <li><a class=\"abcLink\" href=\"http://www.abc.net.au/conditions.htm#UseOfContent\"
+      data-mobile=\"http://www.abc.net.au/conditions.htm#UseOfContent\">&copy; <time>2017</time>
+      ABC</a></li>\n </ul>\n</nav>\n<script type=\"text/javascript\" src=\"http://www.abc.net.au/res/bundles/2.0.5/scripts/abc.bundle.2.0.5.min.js\"></script>\n<script
+      type=\"text/javascript\" src=\"//www.abc.net.au/res/libraries/stats/abc.stats.js\"></script>\n<noscript>\n
+      <img alt=\"dcsimg\" id=\"dcsimg\" width=\"1\" height=\"1\" src=\"//statse.webtrendslive.com/dcsg85fae000004n0vfjpj8oa_9m4q/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.2.10&amp;dcssip=www.abc.net.au\">\n</noscript>\n<!--
+      Google Tag Manager -->\n<script type=\"text/javascript\">\n// <![CDATA[\n (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n
+      })(window,document,'script','dataLayer','GTM-PB2GX');\n // ]]>\n</script>\n<noscript>\n
+      <iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-PB2GX\" height=\"0\"
+      width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n</noscript>\n<!--
+      End Google Tag Manager -->\n<!-- End ABC Bundle Footer 2.0.5 -->\n<!--endnoindex-->\n<!--end
+      global footer-->\n</body>\n</html>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=300
+      Connection:
+      - keep-alive
+      Content-Language:
+      - en-AU
+      Content-Type:
+      - text/html;charset=UTF-8
+      Date:
+      - Wed, 27 Sep 2017 06:20:33 GMT
+      Expires:
+      - Wed, 27 Sep 2017 06:25:33 GMT
+      Last-Modified:
+      - Wed, 27 Sep 2017 06:20:32 GMT
+      Set-Cookie:
+      - ABCGuestID=184.51.15.65.108331506493233244; expires=Mon, 31-Dec-2038 23:59:59
+        GMT; path=/; domain=.abc.net.au
+      - ABC_LD=nsw; path=/; domain=.abc.net.au
+      - ABC_FF=desktop; expires=Wed, 27-Sep-2017 08:20:33 GMT; path=/
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Cookie
+      - User-Agent
+      - User-Agent
+    status: 200 OK
+    code: 200
