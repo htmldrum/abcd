@@ -1,12 +1,12 @@
 package news
 
-import "github.com/htmldrum/abcd/divisions/news/strategies/v0"
+import (
+	"net/http"
+
+	"github.com/htmldrum/abcd/divisions/news/strategies/v0"
+)
 
 type ContentCategory struct {
-	Name string
-}
-
-type Podcast struct {
 	Name string
 }
 
@@ -16,21 +16,19 @@ var (
 	ContentCategories = []ContentCategory{Podcasts, Reports}
 )
 
-// 2 kinds of content:
-// podcasts
-// reports
-// Browsable by topic
-
-func ListPodcasts() ([]Podcast, error) {
-	var p []Podcast
-
-	resp, err := v0.ListPodcasts
+func ListPodcasts() ([]v0.Podcast, error) {
+	c := http.Client{}
+	p, err := v0.ListPodcasts(c)
 	if err != nil {
 		return p, err
 	}
-	for n, pod_json := range resp {
-		p = append(p, Podcast{pod_json.Name})
-	}
-
 	return p, nil
+}
+
+func ListReports() ([]v0.Report, error) {
+	r, err := v0.ListReports()
+	if err != nil {
+		return r, err
+	}
+	return r, nil
 }
