@@ -41,8 +41,16 @@ func ListReportsByCategory(c v0.Category) ([]v0.Report, error) {
 	return r, nil
 }
 
-func ListTopicsForLetter(l string) ([]V0.Topic, error) {
-	r, err := v0.ListTopicsForLetter(l)
+func ListTopicsForLetterByLocation(l string) ([]V0.Topic, error) {
+	r, err := v0.ListTopicsForLetterByLocation(l)
+	if err != nil {
+		return r, err
+	}
+	return r, nil
+}
+
+func ListTopicsForLetterBySubject(l string) ([]V0.Topic, error) {
+	r, err := v0.ListTopicsForLetterBySubject(l)
 	if err != nil {
 		return r, err
 	}
