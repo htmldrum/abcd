@@ -25,8 +25,32 @@ func ListPodcasts() ([]v0.Podcast, error) {
 	return p, nil
 }
 
-func ListReports() ([]v0.Report, error) {
-	r, err := v0.ListReports()
+func ListReportsByState(s v0.State) ([]v0.Report, error) {
+	r, err := v0.ListReportsByState(s)
+	if err != nil {
+		return r, err
+	}
+	return r, nil
+}
+
+func ListReportsByCategory(c v0.Category) ([]v0.Report, error) {
+	r, err := v0.ListReportsByCategory(c)
+	if err != nil {
+		return r, err
+	}
+	return r, nil
+}
+
+func ListTopicsForLetter(l string) ([]V0.Topic, error) {
+	r, err := v0.ListTopicsForLetter(l)
+	if err != nil {
+		return r, err
+	}
+	return r, nil
+}
+
+func ListReportsForTopic(t v0.Topic, page int) ([]V0.Report, error) {
+	r, err := v0.ListReportsForTopic(t, page)
 	if err != nil {
 		return r, err
 	}
