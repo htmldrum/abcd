@@ -1,0 +1,423 @@
+---
+version: 1
+rwmutex: {}
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: http://www.abc.net.au/news/feeds/
+    method: GET
+  response:
+    body: "<!DOCTYPE html>\n  <!--[if lt IE 7]>      <html lang=\"en-AU\" class=\"lt-ie9
+      lt-ie8 lt-ie7\"> <![endif]-->\n  <!--[if IE 7]>         <html lang=\"en-AU\"
+      class=\"lt-ie9 lt-ie8\"> <![endif]-->\n  <!--[if IE 8]>         <html lang=\"en-AU\"
+      class=\"lt-ie9\"> <![endif]-->\n  <!--[if gt IE 8]><!--> <html lang=\"en-AU\">
+      <!--<![endif]-->\n<head>\n  <title>ABC News Podcasts - ABC News (Australian
+      Broadcasting Corporation)</title>\n  <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"/>\n<link
+      rel=\"schema.DC\" href=\"http://purl.org/dc/elements/1.1/\"/>\n<link rel=\"schema.DCTERMS\"
+      href=\"http://purl.org/dc/terms/\"/>\n<link rel=\"schema.iptc\" href=\"urn:newsml:iptc.org:20031010:topicset.iptc-genre:8\"/>\n<link
+      rel=\"canonical\" data-abc-platform=\"standard\" href=\"http://www.abc.net.au/news/feeds/\"/>\n<meta
+      name=\"title\" content=\"ABC News Podcasts\"/>\n                <meta name=\"description\"
+      content=\"Subscribe to ABC News programs and story feeds in text, audio and
+      video.\"/>\n                <meta name=\"ContentId\" content=\"49376\"/>\n                <meta
+      name=\"ABC.site\" content=\"ABC News\"/>\n                <meta name=\"ABC_WCMS_sitesearch_include\"
+      content=\"false\"/>\n                <meta name=\"twitter:card\" content=\"summary\"/>\n
+      \               <meta name=\"ABC.ContentType\" content=\"CMChannel\"/>\n                <meta
+      name=\"DC.Publisher.CorporateName\" content=\"Australian Broadcasting Corporation\"/>\n
+      \               <meta name=\"DC.rights\" scheme=\"DCTERMS.URI\" content=\"http://www.abc.net.au/conditions.htm#UseOfContent\"/>\n
+      \       <meta name=\"DC.type\" content=\"Collection\"/>\n                <meta
+      name=\"DC.creator.CorporateName\" content=\"Australian Broadcasting Corporation\"/>\n
+      \               <meta name=\"DC.format\" scheme=\"DCTERMS.IMT\" content=\"text/html\"/>\n
+      \       <meta name=\"DC.identifier\" scheme=\"DCTERMS.URI\" content=\"http://www.abc.net.au/news/feeds/\"/>\n
+      \         <meta property=\"og:site_name\" content=\"ABC News\"/>\n                <meta
+      name=\"twitter:site\" content=\"@ABCNews\"/>\n                <meta name=\"apple-mobile-web-app-title\"
+      content=\"ABC News\"/>\n                <meta property=\"fb:pages\" content=\"72924719987\"/>\n
+      \               <meta property=\"og:image:height\" content=\"700\"/>\n                <meta
+      property=\"og:image:width\" content=\"700\"/>\n                <meta property=\"og:image:type\"
+      content=\"image/jpeg\"/>\n                <meta property=\"og:image\" content=\"http://www.abc.net.au/news/linkableblob/8413676/data/abc-news-og-data.jpg\"/>\n
+      \               <link rel=\"alternate\" data-abc-platform=\"mobile\" media=\"only
+      screen and (max-width: 640px)\" href=\"http://mobile.abc.net.au/news/feeds/\"/>\n
+      \ <link media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\"\n
+      \                                                                             href=\"http://www.abc.net.au/res/bundles/2.0.5/styles/abc.bundle.2.0.5.min.css\"/>\n
+      \   <link rel=\"stylesheet\" type=\"text/css\"\n                                                                              href=\"http://www.abc.net.au/res/sites/news/styles/min/abc.news.css?2017-09-04\"/>\n
+      \   <!--[if lte IE 7]>\n            <link rel=\"stylesheet\" type=\"text/css\"
+      href=\"http://www.abc.net.au/res/sites/news/styles/yaml/core/slim_iehacks.css\"
+      media=\"screen, projection\"/>\n           <![endif]-->\n         <link rel=\"stylesheet\"
+      type=\"text/css\"\n                                                                              href=\"/cm/code/8886686/livefyre-fixes-v2.css\"/>\n
+      \   <link rel=\"alternate\" type=\"application/rss+xml\" title=\"Just In\" href=\"/news/feed/51120/rss.xml\">\n
+      \ <link rel=\"apple-touch-icon-precomposed\" sizes=\"76x76\" href=\"http://www.abc.net.au/cm/cb/8413652/News+iOS+76x76+2017/data.png\"/>\n
+      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"120x120\" href=\"http://www.abc.net.au/cm/cb/4355924/News+iOS+120x120/data.png\"/>\n
+      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"152x152\" href=\"http://www.abc.net.au/cm/cb/8413660/News+iOS+152x152+2017/data.png\"/>\n
+      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"180x180\" href=\"http://www.abc.net.au/cm/cb/8413674/News+iOS+180x180+2017/data.png\"/>\n
+      \   <script type=\"text/javascript\" src=\"/news/ajax/49376/managed.js\"></script>\n<!--[if
+      lte IE 9]><script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/es5shim/4.1.0/es5-shim.min.js\"></script><![endif]-->\n
+      \       <!--[if lt IE 9]><script type=\"text/javascript\" src=\"http://www.abc.net.au/res/bundles/2.0.5/scripts/html5shiv.js\"></script><![endif]-->\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/jquery/jquery-1.11.3.min.js\"></script>\n
+      \       <!--[if lte IE 9]><script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/iecors/jquery.iecors.min.js\"></script><![endif]-->\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/location/abc.location-1.latest.min.js\"></script>\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/bundles/platforms/abc.bundle.platforms-1.0.min.js\"></script>\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/libraries/jquery/plugins/jquery.viewport.mini.js\"></script>\n
+      \       <script type=\"text/javascript\" src=\"http://www.abc.net.au/res/sites/news/scripts/min/abc.news.js?2017-09-13\"></script>\n
+      \       <script type=\"text/javascript\" src=\"/cm/code/8724582/abc.news.config-v5.js\"
+      async></script>\n        </head>\n<body class=\"platform-standard news\">\n<!--noindex-->\n<!--
+      Start ABC Bundle Header 2.0.5 -->\n<nav id=\"abcHeader\" class=\"global\" role=\"navigation\"
+      aria-label=\"ABC Network Navigation\" data-resourcebase=\"http://www.abc.net.au/res/bundles/2.0.5/\"
+      data-scriptsbase=\"http://www.abc.net.au/res/bundles/2.0.5/scripts/\" data-version=\"2.0.5\">\n
+      <a class=\"abcLink home\" href=\"http://www.abc.net.au/\" data-mobile=\"http://mobile.abc.net.au/\"><img
+      src=\"http://www.abc.net.au/res/bundles/2.0.5/images/logo-abc@2x.png\" width=\"72\"
+      height=\"18\" alt=\"\" />ABC Home</a>\n <div class=\"sites\">\n  <a class=\"controller\"
+      href=\"javascript:;\" aria-controls=\"abcNavSites\"><img src=\"http://www.abc.net.au/res/bundles/2.0.5/images/icon-menu-grey@1x.gif\"
+      \n   data-src=\"images/icon-menu-grey@1x.gif\" data-hover=\"images/icon-menu-blue@1x.gif\"
+      class=\"icon\" alt=\"\" /><span class='text'><span>Open</span> Sites <span>menu</span></span></a>\n
+      \ <div id=\"abcNavSites\" class=\"menu\" role=\"menu\" aria-expanded=\"false\">\n
+      \  <ul>\n    <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"http://www.abc.net.au/\"
+      data-mobile=\"http://mobile.abc.net.au/\">ABC Home</a></li>\n    <li><a class=\"abcLink\"
+      role=\"menuitem\" href=\"http://www.abc.net.au/news/\" data-mobile=\"http://mobile.abc.net.au/news/\">News</a></li>\n
+      \   <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"http://www.abc.net.au/iview/\"
+      data-mobile=\"http://www.abc.net.au/iview/\">iview</a></li>\n    <li><a class=\"abcLink\"
+      role=\"menuitem\" href=\"http://www.abc.net.au/tv/\" data-mobile=\"\">TV</a></li>\n
+      \   <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"http://www.abc.net.au/radio/\"
+      data-mobile=\"http://www.abc.net.au/radio/\">Radio</a></li>\n    <li><a class=\"abcLink\"
+      role=\"menuitem\" href=\"http://www.abc.net.au/children/\" data-mobile=\"http://mobile.abc.net.au/children/\">Kids</a></li>\n
+      \   <li class='odd'><a class=\"abcLink\" role=\"menuitem\" href=\"https://shop.abc.net.au/\"
+      data-mobile=\"https://shop.abc.net.au/\">Shop</a></li>\n    <li><a class=\"abcLink
+      more\" role=\"menuitem\" href=\"http://www.abc.net.au/more/\" data-mobile=\"http://www.abc.net.au/more/\">More</a></li>\n
+      \  </ul>\n  </div>\n </div>\n <div class=\"accounts\">\n  <!-- Accounts is currently
+      injected due to different URLs --><span data-src=\"images/icon-user-grey@1x.png\"
+      data-hover=\"images/icon-user-blue@1x.png\"></span>\n </div>\n <a class=\"abcLink
+      search\" href=\"http://search.abc.net.au/s/search.html?collection=abcall_meta&form=simple\"\n
+      \ data-mobile=\"http://mobile.search.abc.net.au/s/search.html?collection=abcall_meta&form=simple\"><span>Search</span>\n
+      \ <img src=\"http://www.abc.net.au/res/bundles/2.0.5/images/icon-search-grey@1x.png\"
+      data-hover=\"images/icon-search-blue@1x.png\" class=\"icon\" alt=\"\" /></a>\n</nav>\n<!--
+      End ABC Bundle Header 2.0.5 -->\n<!--endnoindex-->\n<!--noindex-->\n<div class=\"page_margins\">\n
+      \ <div id=\"header\" class=\"header\">\r\n    <div class=\"brand\">\r\n        <a
+      href=\"/news/\"><img class=\"print\" src=\"/cm/lb/8212706/data/news-logo-2017---desktop-print-data.png\"
+      alt=\"ABC News\" width=\"387\" height=\"100\" />\r\n                <img class=\"noprint\"
+      src=\"/cm/lb/8212704/data/news-logo2017-data.png\" alt=\"ABC News\" width=\"242\"
+      height=\"80\" />\r\n                </a></div>\r\n      <a href=\"/news/australia/\"
+      class=\"location-widget\">Australia</a><a href=\"/news/weather/\" class=\"weather-widget\">Weather</a></div>\r\n
+      \ <div id=\"nav\" class=\"nav\">           \n  <ul id=\"primary-nav\">\n        <li
+      id=\"n-news\" class=\"\"><a href=\"/news/\">News Home</a></li><li id=\"n-justin\"
+      class=\"\"><a href=\"/news/justin/\">Just In</a></li><li id=\"n-australia\"
+      class=\"\"><a href=\"/news/australia/\">Australia</a></li><li id=\"n-world\"
+      class=\"\"><a href=\"/news/world/\">World</a></li><li id=\"n-business\" class=\"\"><a
+      href=\"/news/business/\">Business</a></li><li id=\"n-sport\" class=\"\"><a href=\"/news/sport/\">Sport</a></li><li
+      id=\"n-science\" class=\"\"><a href=\"/news/science/\">Science</a></li><li id=\"n-arts-culture\"
+      class=\"\"><a href=\"/news/arts-culture/\">Arts</a></li><li id=\"n-analysis-and-opinion\"
+      class=\"\"><a href=\"/news/analysis-and-opinion/\">Analysis</a></li><li id=\"n-factcheck\"
+      class=\"\"><a href=\"/news/factcheck/\">Fact Check</a></li><li id=\"n-programs\"
+      class=\"\"><a href=\"/news/programs/\">Programs</a></li><li id=\"n-more\" class=\"\"><a
+      href=\"/news/more/\">More</a></li></ul>\n  </div>\n<div class=\"header subheader\">\r\n
+      \ <!--endnoindex--><h1>Subscribe</h1>\r\n    <!--noindex-->\r\n    <ul class=\"nav\">\r\n
+      \       <li class=\"active\">\r\n            <a href=\"/news/feeds/\"><span>Podcasts</span></a></li>\r\n
+      \       <li>\r\n            <a href=\"/news/feeds/rss/\"><span>RSS Feeds</span></a></li>\r\n
+      \       <li>\r\n            <a href=\"/news/alerts/\"><span>NewsMail</span></a></li>\r\n
+      \       </ul>\r\n    </div><!-- A modules - start -->\n  <!-- A modules - end
+      -->\n  <div class=\"page section\">\n    <div class=\"subcolumns\">\n    <div
+      class=\"c75l\">\n      <!-- B modules - start -->\n      <div class=\"article
+      section placed\">\n    <!--endnoindex-->\n    <h1>Podcasts</h1>\n\n<p>Catch
+      up with your favourite ABC News programs any time and place.</p><p>ABC News
+      provides audio and video podcasts of radio and TV current affairs programs.
+      The audio is in MP3 format, the video in MP4 format.</p><p>If you want to manually
+      download files as MP3s, please go to the individual program page and right click
+      on the 'MP3' link, then save to a selected folder.</p><p>If you prefer, you
+      can find <a href=\"https://itunes.apple.com/au/artist/abc-news-and-current-affairs/id280248626?mt=2\"
+      target=\"_self\" title=\"\">News podcasts on iTunes</a>, and <a href=\"https://itunes.apple.com/au/artist/abc-radio-national/id124777713?mt=2\"
+      target=\"_self\" title=\"\">Radio National podcasts on iTunes</a>. News and
+      current affairs programs are also available on <a href=\"http://www.abc.net.au/tv/programs/abc-news/\"
+      target=\"_self\" title=\"\">iView</a>, and a selection of news videos are available
+      on <a href=\"https://www.youtube.com/user/NewsOnABC\" target=\"_self\" title=\"\">YouTube</a>.</p><p>For
+      more information on ABC podcasts, take a look at this <a href=\"http://www.abc.net.au/services/podcasting/faq.htm\"
+      target=\"_self\" title=\"\">FAQ</a>.</p><h2><a href=\"http://www.abc.net.au/7.30/\"
+      target=\"_self\" title=\"\">7.30</a></h2><p>7.30 provides the best analysis
+      of local, national and international events from an Australian perspective,
+      weeknights on ABC1.</p><ul><li><a href=\"http://abc.net.au/7.30/xml/730_vodcast_m4v.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li></ul><h2><a href=\"http://www.abc.net.au/am/\">AM</a></h2><p>AM
+      is Australia's most informative morning current affairs. It covers the stories
+      each morning that the other current affairs teams follow for the rest of the
+      day. Duration: 30 min.</p><ul><li><a href=\"http://www.abc.net.au/am/rss/amrss.xml\">Subscribe
+      to the Full Program</a></li><li><a href=\"http://www.abc.net.au/am/rss/amrssi.xml\">Subscribe
+      to Individual Stories</a></li></ul><h2><a href=\"/radionational/programs/backgroundbriefing/\"
+      target=\"_self\" title=\"\">Background Briefing</a></h2><p>Radio National's
+      agenda-setting current affairs radio documentary program.</p><ul><li><a href=\"http://abc.net.au/rn/podcast/feeds/bbing.xml\">Subscribe</a></li></ul><h2><a
+      href=\"/news/programs/the-business/\" target=\"_self\" title=\"\">The Business</a></h2><p>The
+      day's business and finance news, with the latest trends on international share
+      and currency markets, pointing to what Australians can expect in the day ahead.</p><ul><li><a
+      href=\"http://abc.net.au/news/feed/3800164/podcast.xml\" target=\"_self\" title=\"\">Subscribe</a></li></ul><h2><a
+      href=\"http://www.abc.net.au/correspondents/\">Correspondents Report</a></h2><p>In
+      Correspondents Report, the ABC's overseas reporters give their interpretation
+      and analyses of the week's major events, and offer perceptive observations about
+      the countries and regions in which they're based. Duration: 30 min, filesize:
+      13 MB. Updated Weekly.</p><ul><li><a href=\"http://www.abc.net.au/correspondents/rss/crrss.xml\">Subscribe
+      to the Full Program</a></li><li><a href=\"http://www.abc.net.au/correspondents/rss/crrssi.xml\">Subscribe
+      to Individual Stories</a></li></ul><h2><a href=\"/news/rural/\" target=\"_self\"
+      title=\"\">Country Hour</a></h2><p>The best of the week in Australian rural
+      affairs from the Country Hour program on ABC Local Radio.</p><ul><li>Queensland
+      Country Hour: <a href=\"http://www.abc.net.au/local/podcasts/qldcountryhour.xml\"
+      target=\"_self\" title=\"\">Subscribe</a> | <a href=\"https://itunes.apple.com/au/podcast/queensland-country-hour/id632342080?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li><li>New South Wales Country Hour:
+      <a href=\"http://www.abc.net.au/local/podcasts/nswcountryhour.xml\">Subscribe</a>
+      | <a href=\"https://itunes.apple.com/au/podcast/new-south-wales-country-hour/id311113450?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li><li>Victorian Country Hour: <a href=\"http://www.abc.net.au/local/podcasts/viccountryhour.xml\">Subscribe</a>
+      | <a href=\"https://itunes.apple.com/au/podcast/victorian-country-hour/id362378375?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li><li>Tasmanian Country Hour: <a href=\"http://www.abc.net.au/local/podcasts/tascountryhour.xml\">Subscribe</a>
+      | <a href=\"https://itunes.apple.com/au/podcast/tasmanian-country-hour/id362378896?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li><li>Northern Territory Country Hour:
+      <a href=\"http://www.abc.net.au/local/podcasts/ntcountryhour.xml\">Subscribe</a>
+      | <a href=\"https://itunes.apple.com/au/podcast/northern-territory-country/id311113456?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li><li>South Australian Country Hour:
+      <a href=\"http://www.abc.net.au/local/podcasts/sacountryhour.xml\">Subscribe</a>
+      | <a href=\"https://itunes.apple.com/au/podcast/south-australian-country-hour/id308767449?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li><li><p>West Australian Country Hour:
+      <a href=\"http://www.abc.net.au/local/podcasts/wacountryhour.xml\">Subscribe</a>
+      | <a href=\"https://itunes.apple.com/au/podcast/western-australian-country/id313446311?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></p></li></ul><h2><a href=\"/news/rural/programs/countrywide/\"
+      target=\"_self\" title=\"\">Countrywide</a></h2><p>Countrywide takes you outside
+      the cities into regional Australia, talking about the food you eat, how it's
+      produced, and what the latest rural news means for the Australian economy.</p><ul><li><a
+      href=\"http://www.abc.net.au/radio/programs/countrywide/feed/7829004/podcast.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li><li><p><a href=\"https://itunes.apple.com/au/podcast/countrywide-abc-rural/id598830819?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></p></li></ul><h2><a href=\"/news/programs/dc-washup/\"
+      target=\"_self\" title=\"\">DC Washup</a></h2><p>DC Wash Up is a look at US
+      politics through  Australian eyes. ABC North America correspondents Zoe Daniel,
+      Stephanie  March and Michael Vincent and US bureau producer Roscoe Whalan reflect
+      \ on the stories behind the headlines.</p><ul><li><a href=\"/news/feed/7341296/podcast.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li><li><a href=\"https://itunes.apple.com/au/podcast/dc-washup/id1106114905?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li></ul><h2><a href=\"/news/programs/dishonourable-members/\"
+      target=\"_self\" title=\"\">Dishonourable Members</a></h2><p>ABC political reporters
+      Matthew Doran and Anna Henderson pull apart the political and media circus that
+      is Australian politics to take you inside both camps – with help from some of
+      the ABC's top political operatives.</p><ul><li><a href=\"/news/feed/7390424/podcast.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li><li><a href=\"https://itunes.apple.com/au/podcast/dishonourable-members/id1112016990?mt=2\"
+      target=\"_self\" title=\"\">iTunes</a></li></ul><h2><a href=\"http://www.abc.net.au/insiders/\"
+      target=\"_self\" title=\"\">Insiders</a></h2><p>Since 2001, Insiders has been
+      the must-watch political news and interview program for all politicians and
+      news enthusiasts alike.</p><ul><li><a href=\"http://www.abc.net.au/insiders/xml/vodcast_insiders.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li></ul><h2><a href=\"http://www.abc.net.au/lateline/\"
+      target=\"_self\" title=\"\">Lateline</a></h2><p>Lateline is a unique nightly
+      news analysis program bringing you up-to-the-minute coverage of Australian and
+      international news and events. The program is a provocative, challenging and
+      intelligent window on today's world.</p><ul><li><a href=\"http://abc.net.au/lateline/xml/ll_vodcast.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li></ul><h2><a href=\"/radionational/programs/lawreport/\"
+      target=\"_self\" title=\"\">Law Report</a></h2><p>Breaking legal stories across
+      Australia and overseas, analysing law reform, legal education, test cases, miscarriages
+      of justice and examining legal culture. The Law Report is clear, jargon-free
+      information about the law and those who make it, break it, and have to comply
+      with it.</p><ul><li><a href=\"http://www.abc.net.au/rn/podcast/feeds/lawrpt.xml\">Subscribe</a></li></ul><h2><a
+      href=\"http://www.abc.net.au/offsiders\" target=\"_self\" title=\"\">Offsiders</a></h2><p>A
+      show for anyone who's serious about sport, Offsiders will provide challenging,
+      insightful, humourous debate about the topic that dominates weekends.</p><ul><li><a
+      href=\"http://abc.net.au/sport/offsiders/xml/vodcast-mp4.xml\" target=\"_self\"
+      title=\"\">Subscribe</a></li></ul><h2><a href=\"http://www.radioaustralia.net.au/pacbeat/\">Pacific
+      Beat</a></h2><p>The latest news, opinions and analysis from the Pacific from
+      Monday to Friday.</p><ul><li><a href=\"http://www.abc.net.au/ra/podcast/pacbeat/pacbeat.xml\">Subscribe</a></li></ul><h2><a
+      href=\"http://www.abc.net.au/pm/\">PM</a></h2><p>PM covers a broad spectrum
+      of issues relevant to all sections of Australia's geographically and culturally
+      diverse community. It looks behind political, economic, industrial, business,
+      social, cultural, rural, regional and arts stories.</p><ul><li><a href=\"http://www.abc.net.au/pm/rss/pmrss.xml\">Subscribe
+      to the Full Program</a></li><li><a href=\"http://www.abc.net.au/pm/rss/pmrssi.xml\">Subscribe
+      to Individual Stories</a></li></ul><h2><a href=\"/radionational/programs/breakfast/\"
+      target=\"_self\" title=\"\">Radio National Breakfast</a></h2><p>Comprehensive
+      coverage and analysis of national and international events. Serious, fun, topical
+      and diverse.</p><ul><li><a href=\"http://www.abc.net.au/rn/podcast/feeds/breakfast.xml\">Subscribe</a></li></ul><h2><a
+      href=\"/news/rural/\" target=\"_self\" title=\"\">Rural News</a></h2><p>National
+      rural news bulletin from ABC Rural.</p><ul><li><a href=\"http://www.abc.net.au/news/feed/4605200/podcast.xml\"
+      target=\"_self\" title=\"\">Subscribe</a></li></ul><h2><a href=\"http://www.abc.net.au/worldtoday/\">The
+      World Today</a></h2><p>The World Today is a comprehensive current affairs program
+      which backgrounds, analyses, interprets and encourages debate on events and
+      issues of interest and importance to all Australians.</p><ul><li><a href=\"http://www.abc.net.au/worldtoday/rss/twtrss.xml\">Subscribe
+      to the Full Program</a></li><li><a href=\"http://www.abc.net.au/worldtoday/rss/twtrssi.xml\">Subscribe
+      to Individual Stories</a></li></ul><h2>Terms of Use</h2><p>The ABC grants you
+      a licence to download these audio/audio-visual files (as applicable) for your
+      private, personal, domestic, non-commercial use only. You may not use these
+      audio/audio-visual files (as applicable) for any other purpose (including but
+      without limitation downloading, editing, or using these files for the purpose
+      of (a) distribution to a third party; or (b) promoting, advertising, endorsing
+      or implying a connection with you (or any third party) and the ABC, its agents
+      or employees). The ABC will not be liable for any loss or damage (including
+      but without limitation any costs charged by your service provider incurred by
+      you in receiving the download), which you may suffer as a result of or connected
+      with the download or use of these files.</p><h2>Looking for RSS feeds?</h2><p><a
+      href=\"/news/feeds/rss/\" target=\"_self\" title=\"\">Please visit our RSS Feeds
+      page</a></p>\n\n\n\n<!--noindex-->\n  </div>\n<!-- B modules - end -->\n    </div>\n
+      \   <div class=\"c25r sidebar\">\n    <!-- Sidebar modules - start -->\n    <div
+      class=\"section promo\">\r\n  <div class=\"inner\">\r\n      <h2>Subscribe</h2><ul><li><a
+      href=\"http://www.abc.net.au/news/alerts/subscribe/\" target=\"_blank\" title=\"\"><strong>NewsMail</strong></a>:
+      a twice-daily email with all the top stories</li><li><a href=\"http://abc.net.au/news/feeds\"
+      target=\"_blank\" title=\"\"><strong>Podcasts</strong></a>: listen to what you
+      want, when you want</li><li><a href=\"http://abc.net.au/news/feeds/rss\" target=\"_blank\"
+      title=\"\"><strong>RSS feeds</strong></a>: follow the topics that interest you</li></ul></div>\r\n
+      \ </div>\r\n<div class=\"section promo\">\r\n  <div class=\"inner\">\r\n      <h2>Connect
+      on social media</h2><ul><li><a href=\"http://twitter.com/abcnews\" target=\"_blank\"
+      title=\"\"><strong>Twitter</strong></a>: follow Australia's leading news service</li><li><strong>Facebook</strong>:
+      <a href=\"http://facebook.com/abcnews.au\" target=\"_blank\" title=\"\">Like
+      us</a> to share and comment</li><li><a href=\"http://youtube.com/newsonabc\"
+      target=\"_blank\" title=\"\"><strong>YouTube</strong></a>: subscribe and never
+      miss a piece of top ABC News video</li><li><a href=\"http://flickr.com/photos/abcnews_au\"
+      target=\"_blank\" title=\"\"><strong>Flickr</strong></a>: check out our photos,
+      and <a href=\"http://www.flickr.com/groups/abcupload/\" target=\"_blank\" title=\"\">share</a>
+      yours</li><li><a href=\"http://storify.com/abcnews\" target=\"_blank\" title=\"\"><strong>Storify</strong></a>:
+      curating the best content from social media</li><li><a href=\"http://instagram.com/abcnews_au\"
+      target=\"_blank\" title=\"\"><strong>Instagram</strong></a>: compelling images
+      from ABC News and our audience</li><li><a href=\"http://pinterest.com/abcnewsau/\"
+      target=\"_blank\" title=\"\"><strong>Pinterest</strong></a>: have a look at
+      our pinning trial</li></ul></div>\r\n  </div>\r\n<div class=\"section promo\">\r\n
+      \ <div class=\"inner\">\r\n      <h2>Contribute to ABC News</h2><ul><li><a href=\"http://www.abc.net.au/news/upload/\"
+      target=\"_blank\" title=\"\"><strong>Upload</strong></a>: share your photos
+      and video</li><li><a href=\"http://www.abc.net.au/news/contact/feedback/\" target=\"_blank\"
+      title=\"\"><strong>Email</strong></a>: news tips and feedback</li></ul></div>\r\n
+      \ </div>\r\n<!-- Sidebar modules - end -->\n  </div>\n</div>\n</div><!-- C modules
+      - start -->\n  <!-- C modules - end -->\n<div id=\"footer\" class=\"page section\">\r\n
+      \   <!-- program footer-->\n  <div class=\"subcolumns\">\n    <div id=\"sitemap\"
+      class=\"c75l\">\n        <div class=\"section\">\n          <h2>Site Map</h2>\n
+      \       </div>\n        <div class=\"subcolumns\">\n          <div class=\"c16l\">\n
+      \             <div class=\"section\">\n    <h3>Sections</h3><ul class=\"nav\">\n
+      \       <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/\"\n    >\n
+      \ \n\n  \n    \n        <span>ABC News</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/justin/\"\n
+      \   >\n  \n\n  \n    \n        <span>Just In</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/australia/\"\n
+      \   >\n  \n\n  \n    \n        <span>Australia</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/world/\"\n
+      \   >\n  \n\n  \n    \n        <span>World</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/business/\"\n
+      \   >\n  \n\n  \n    \n        <span>Business</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/entertainment/\"\n
+      \   >\n  \n\n  \n    \n        <span>Entertainment</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/sport/\"\n
+      \   >\n  \n\n  \n    \n        <span>Sport</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/analysis-and-opinion/\"\n
+      \   >\n  \n\n  \n    \n        <span>Analysis &amp; Opinion</span>\n    \n    \n
+      \ \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a
+      href=\"/news/weather/\"\n    >\n  \n\n  \n    \n        <span>Weather</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/topics/\"\n    >\n  \n\n  \n    \n        <span>Topics</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/archive/\"\n    >\n  \n\n  \n    \n        <span>Archive</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/corrections/\"\n    >\n  \n\n  \n    \n        <span>Corrections
+      &amp; Clarifications</span>\n    \n    \n  \n\n  </a>\n</li>\n          </ul>\n
+      \   </div>\n</div>\n            <div class=\"c16l\">\n              <div class=\"section\">\n
+      \   <h3>Local Weather</h3><ul class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"http://www.abc.net.au/sydney/weather/\"\n    >\n  \n\n
+      \ \n    \n        <span>Sydney Weather</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/melbourne/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Melbourne Weather</span>\n    \n    \n
+      \ \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a
+      href=\"http://www.abc.net.au/adelaide/weather/\"\n    >\n  \n\n  \n    \n        <span>Adelaide
+      Weather</span>\n    \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"http://www.abc.net.au/brisbane/weather/\"\n    >\n  \n\n
+      \ \n    \n        <span>Brisbane Weather</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/perth/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Perth Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/hobart/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Hobart Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/darwin/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Darwin Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/canberra/weather/\"\n
+      \   >\n  \n\n  \n    \n        <span>Canberra Weather</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          </ul>\n    </div>\n</div>\n            <div class=\"c16l\">\n
+      \             <div class=\"section\">\n    <h3>Local News</h3><ul class=\"nav\">\n
+      \       <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/sydney/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Sydney News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/melbourne/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Melbourne News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/adelaide/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Adelaide News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/brisbane/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Brisbane News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/perth/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Perth News</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/hobart/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Hobart News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/darwin/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Darwin News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"http://www.abc.net.au/canberra/news/\"\n
+      \   >\n  \n\n  \n    \n        <span>Canberra News</span>\n    \n    \n  \n\n
+      \ </a>\n</li>\n          </ul>\n    </div>\n</div>\n            <div class=\"c16l\">\n
+      \             <div class=\"section\">\n    <h3>Media</h3><ul class=\"nav\">\n
+      \       <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/video/\"\n
+      \   >\n  \n\n  \n    \n        <span>Video</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/audio/\"\n
+      \   >\n  \n\n  \n    \n        <span>Audio</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/photos/\"\n
+      \   >\n  \n\n  \n    \n        <span>Photos</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         </ul>\n    </div>\n</div>\n            <div class=\"c16l\">\n              <div
+      class=\"section\">\n    <h3>Subscribe</h3><ul class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"/news/feeds/\"\n    >\n  \n\n  \n    \n        <span>Podcasts</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n
+      \   \n    <a href=\"/news/feeds/rss/\"\n    >\n  \n\n  \n    \n        <span>RSS
+      Feeds</span>\n    \n    \n  \n\n  </a>\n</li>\n          <li>\n\n\n\n\n\n\n\n\n\n\n\n\n
+      \ \n    \n    <a href=\"/news/alerts/\"\n    >\n  \n\n  \n    \n        <span>NewsMail</span>\n
+      \   \n    \n  \n\n  </a>\n</li>\n          </ul>\n    </div>\n</div>\n            <div
+      class=\"c16l\">\n              <div class=\"section\">\n    <h3>Connect</h3><ul
+      class=\"nav\">\n        <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/upload/\"\n
+      \   >\n  \n\n  \n    \n        <span>Upload</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/contact/\"\n
+      \   >\n  \n\n  \n    \n        <span>Contact Us</span>\n    \n    \n  \n\n  </a>\n</li>\n
+      \         <li>\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n    <a href=\"/news/analysis-and-opinion/\"\n
+      \   >\n  \n\n  \n    \n        <span>Suggest a Contributor</span>\n    \n    \n
+      \ \n\n  </a>\n</li>\n          </ul>\n    </div>\n</div>\n            </div>\n
+      \     </div>\n    <!-- right section-->\n    <div class=\"c25r\">\n      <div
+      id=\"fineprint\" class=\"section\">\n        <p>\n          <small>This service
+      may include material from Agence France-Presse (AFP), APTN, Reuters, AAP, CNN
+      and the BBC World Service which is copyright and cannot be reproduced.</small>\n
+      \       </p>\n        <p>\n          <small>AEST = Australian Eastern Standard
+      Time which is 10 hours ahead of UTC (Greenwich Mean Time)</small>\n        </p>\n
+      \     </div>\n    </div>\n  </div>\n  <div class=\"platforms\">\n      <a href=\"http://mobile.abc.net.au/news/feeds/?pfm=sm\"
+      class=\"platform-mobile switch\">Change to mobile view</a></div>\n  </div><!--
+      End footer --></div>\n<!-- Start Webtrends -->\n<div class=\"hide\">\n  </div>\n<!--
+      End Webtrends -->\n<!--endnoindex--><!--Global footer-->\n<!--noindex-->\n<!--
+      Start ABC Bundle Footer 2.0.5 (customised) -->\n<nav id=\"abcFooter\" class=\"global\"
+      role=\"navigation\" aria-label=\"ABC Footer Navigation\" data-version=\"2.0.5\">\n
+      <ul>\n  <li><a class=\"abcLink\" href=\"http://www.abc.net.au/conditions.htm\"
+      data-mobile=\"http://www.abc.net.au/conditions.htm\">Terms of Use</a></li>\n
+      \ <li><a class=\"abcLink\" href=\"http://about.abc.net.au/abc-privacy-policy/\"
+      data-mobile=\"http://about.abc.net.au/abc-privacy-policy/\">Privacy Policy</a></li>\n
+      \ <li><a class=\"abcLink\" href=\"http://www.abc.net.au/contact/\" data-mobile=\"http://www.abc.net.au/contact/\">Contact
+      Us</a></li>\n  <li><a class=\"abcLink\" href=\"http://www.abc.net.au/conditions.htm#UseOfContent\"
+      data-mobile=\"http://www.abc.net.au/conditions.htm#UseOfContent\">&copy; <time>2017</time>
+      ABC</a></li>\n </ul>\n</nav>\n<script type=\"text/javascript\" src=\"http://www.abc.net.au/res/bundles/2.0.5/scripts/abc.bundle.2.0.5.min.js\"></script>\n<script
+      type=\"text/javascript\" src=\"//www.abc.net.au/res/libraries/stats/abc.stats.js\"></script>\n<noscript>\n
+      <img alt=\"dcsimg\" id=\"dcsimg\" width=\"1\" height=\"1\" src=\"//statse.webtrendslive.com/dcsg85fae000004n0vfjpj8oa_9m4q/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.2.10&amp;dcssip=www.abc.net.au\">\n</noscript>\n<!--
+      Google Tag Manager -->\n<script type=\"text/javascript\">\n// <![CDATA[\n (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n
+      })(window,document,'script','dataLayer','GTM-PB2GX');\n // ]]>\n</script>\n<noscript>\n
+      <iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-PB2GX\" height=\"0\"
+      width=\"0\" style=\"display:none;visibility:hidden\"></iframe>\n</noscript>\n<!--
+      End Google Tag Manager -->\n<!-- End ABC Bundle Footer 2.0.5 -->\n<!--endnoindex-->\n<!--end
+      global footer-->\n</body>\n</html>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Cache-Control:
+      - max-age=381
+      Connection:
+      - keep-alive
+      Content-Language:
+      - en-AU
+      Content-Type:
+      - text/html;charset=UTF-8
+      Date:
+      - Tue, 26 Sep 2017 22:45:49 GMT
+      Expires:
+      - Tue, 26 Sep 2017 22:52:10 GMT
+      Last-Modified:
+      - Tue, 26 Sep 2017 22:45:48 GMT
+      Set-Cookie:
+      - ABCGuestID=149.135.81.29.278201506465949197; expires=Mon, 31-Dec-2038 23:59:59
+        GMT; path=/; domain=.abc.net.au
+      - ABC_LD=nsw; path=/; domain=.abc.net.au
+      - ABC_FF=desktop; expires=Wed, 27-Sep-2017 00:45:49 GMT; path=/
+      Vary:
+      - Accept-Encoding
+      - Origin
+      - Cookie
+      - User-Agent
+      - User-Agent
+      X-Ua-Compatible:
+      - IE=Edge
+    status: 200 OK
+    code: 200

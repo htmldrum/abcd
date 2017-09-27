@@ -8,3 +8,5 @@ install:
   - godep restore
 script:
   - make test
+cache:
+  - ${TRAVIS_BUILD_DIR}/Godeps/_workspace
