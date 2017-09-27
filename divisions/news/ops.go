@@ -41,23 +41,25 @@ func ListReportsByCategory(c v0.Category) ([]v0.Report, error) {
 	return r, nil
 }
 
-func ListTopicsForLetterByLocation(l string) ([]V0.Topic, error) {
-	r, err := v0.ListTopicsForLetterByLocation(l)
+func ListTopicsForLetterByLocation(l string) ([]v0.Topic, error) {
+	c := http.Client{}
+	r, err := v0.ListTopicsForLetterByLocation(c, l)
 	if err != nil {
 		return r, err
 	}
 	return r, nil
 }
 
-func ListTopicsForLetterBySubject(l string) ([]V0.Topic, error) {
-	r, err := v0.ListTopicsForLetterBySubject(l)
+func ListTopicsForLetterBySubject(l string) ([]v0.Topic, error) {
+	c := http.Client{}
+	r, err := v0.ListTopicsForLetterBySubject(c, l)
 	if err != nil {
 		return r, err
 	}
 	return r, nil
 }
 
-func ListReportsForTopic(t v0.Topic, page int) ([]V0.Report, error) {
+func ListReportsForTopic(t v0.Topic, page int) ([]v0.Report, error) {
 	r, err := v0.ListReportsForTopic(t, page)
 	if err != nil {
 		return r, err
